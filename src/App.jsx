@@ -19,7 +19,7 @@ export const goods = [
 export const App = () => {
   const defaultSelectedGood = 'Jam';
   const [selectedGood, setSelectedGood] = useState(defaultSelectedGood);
-  const [selectedState, setSelectedState] = useState(true);
+  const [selectedState, setSelectedState] = useState(!!defaultSelectedGood);
 
   return (
     <main className="section container">
